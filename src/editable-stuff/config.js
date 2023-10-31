@@ -9,7 +9,7 @@ const mainBody = {
   firstName: "Hoang",
   middleName: "Manh",
   lastName: "Duc",
-  message: "Pianist and Software Developer",
+  message: "Software Developer full time, musician part time",
   icons: [
     {
       image: "github",
@@ -30,20 +30,6 @@ const mainBody = {
   ],
 };
 
-// ABOUT SECTION
-// If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
-//a) your Instagram username
-//      i.e:profilePictureLink:"johnDoe123",
-//b) a link to an hosted image
-//      i.e:profilePictureLink:"www.picturesonline.com/johnDoeFancyAvatar.jpg",
-//c) image in "editable-stuff" directory and use require("") to import here,
-//      i.e: profilePictureLink: require("../editable-stuff/hashirshoaeb.png"),
-//d) If you do not want any picture to be displayed, just leave it empty :)
-//      i.e: profilePictureLink: "",
-// For Resume either provide link to your resume or import from "editable-stuff" directory
-//     i.e resume: require("../editable-stuff/resume.pdf"),
-//         resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-
 const about = {
   show: true,
   heading: "About Me",
@@ -52,7 +38,7 @@ const about = {
   message:
     `I'm Hoang Manh Duc - a Computer Science undergraduate at the National University of Singapore. I like code and play piano.
     To have a better understanding of myself, please read my transformation story here`,
-  resume: "https://google.com",
+  resume: "https://drive.google.com/file/d/1n5YheBSXjiYMDRAnPqnkUYQYtcG8ZvWN/view?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -145,6 +131,12 @@ const experiences = {
         'Develop backend microservices and routing using SQLAlchemy, Python, and FAST-API',
         'Develop models schemas and migration with PostgreSQL and Alembic',
         'Deployed and managed systems with Docker and Google Cloud Platform'
+      ],
+      technologies: [
+        { name: "Vue", logo: "../assets/logos/vue.png" },
+        { name: "SQLAlchemy", logo: "../assets/logos/sqlalchemy.jpg" },
+        { name: "Google Cloud", logo: "../assets/logos/gcpd.png" },
+        { name: "GitHub Actions", logo: "../assets/logos/gitact.png" },
       ]
     },
     {
@@ -153,6 +145,10 @@ const experiences = {
       date: 'Aug 2022 to Nov 2022',
       tasks: [
         
+      ],
+      technologies: [
+        { name: "ReactJS", logo: "../assets/logos/react.png" },
+        { name: "C#", logo: "../assets/logos/csharp.png" }
       ]
     },
     {
@@ -161,6 +157,10 @@ const experiences = {
       date: 'May 2023 to Aug 2023',
       tasks: [
         
+      ],
+      technologies: [
+        { name: "OpenCV", logo: "../assets/logos/opencv.png" },
+        { name: "Torch", logo: "../assets/logos/pytorch.png" }
       ]
     },
     {
@@ -169,6 +169,10 @@ const experiences = {
       date: 'Aug 2023 to Oct 2023',
       tasks: [
         
+      ],
+      technologies: [
+        { name: "Figma", logo: "../assets/logos/figma.png" },
+        { name: "SQL", logo: "/path/to/pgsql.png" }
       ]
     }
   ]

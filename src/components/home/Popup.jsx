@@ -15,7 +15,7 @@ const Popup = ({data}) => {
 
   return (
     <div>
-      <button onClick={openModal}>Open Popup</button>
+      <button class="btn btn-info" onClick={openModal}>More information</button>
        <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
@@ -23,7 +23,7 @@ const Popup = ({data}) => {
         className="custom-modal" // Apply the custom class here
         overlayClassName="custom-overlay" // Optional: Apply styles to the overlay
       >
-        <h2>This is a Smaller Popup</h2>
+        <h2>Coming soon</h2>
         <p>Click anywhere outside to close.</p>
         <button onClick={closeModal}>Close</button>
       </Modal>
@@ -40,6 +40,15 @@ const Popup = ({data}) => {
           top: 50%; /* Position it vertically at 50% of the viewport height */
           left: 50%; /* Position it horizontally at 50% of the viewport width */
           transform: translate(-50%, -50%); /* Center the modal in the viewport */
+        }
+
+        .custom-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.4); /* semi-transparent background */
         }
         `
         }

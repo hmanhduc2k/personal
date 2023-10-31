@@ -16,14 +16,14 @@ const Experience = ({ experiences }) => {
   }
 
   const carouselNextButtonStyles = {
-    backgroundColor: 'black', // Change to your desired color
-    color: '#fff',                 // Set the text color to contrast with the background
+    backgroundColor: '#D6C6B7', // Change to your desired color
+    color: '#625345',                 // Set the text color to contrast with the background
     // Add other styles as needed
   };
 
   // Custom CSS for Carousel next arrow button hover (optional)
   const carouselNextButtonHoverStyles = {
-    backgroundColor: 'red', // Change to your desired hover color
+    backgroundColor: 'gray', // Change to your desired hover color
     // Add other hover styles as needed
   };
 
@@ -56,6 +56,8 @@ const Experience = ({ experiences }) => {
                   .carousel-control-next {
                     background-color: ${carouselNextButtonStyles.backgroundColor};
                     color: ${carouselNextButtonStyles.color};
+                    right: 0px;
+                    width: 100px;
                     /* Add other styles as needed */
                   }
 
@@ -67,12 +69,22 @@ const Experience = ({ experiences }) => {
                   .carousel-control-prev {
                     background-color: ${carouselNextButtonStyles.backgroundColor};
                     color: ${carouselNextButtonStyles.color};
+                    left: 0px;
+                    width: 100px;
                     /* Add other styles as needed */
                   }
 
                   .carousel-control-prev:hover {
                     background-color: ${carouselNextButtonHoverStyles.backgroundColor};
                     /* Add other hover styles as needed */
+                  }
+
+                  .carousel-control-prev-icon,
+                  .carousel-control-next-icon {
+                      width: 80px;  /* Adjust as needed */
+                      height: 80px;  /* Adjust as needed */
+                      background-color: transparent; /* This removes the default white background */
+                      filter: invert(1);
                   }
                 `}
               </style>

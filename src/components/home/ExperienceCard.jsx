@@ -26,18 +26,38 @@ const ExperienceCard = ({ data }) => {
           <br />
           {data.date}
         </p>
+        
+        <div style={{textAlign: 'start'}}>
+          <b>Technologies</b>
+        </div>
+        <br />
+        <div className="tech-logos" style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '260px' }}>
+        {data.technologies.map((tech, index) => (
+          <img 
+            key={index}
+            src={tech.logo}
+            alt={tech.name}
+            style={{
+              width: '100px',   // Adjust as needed
+              height: '100px',  // Adjust as needed
+              objectFit: 'contain',
+              margin: '5px'    // Gives some space between logos
+            }}
+          />
+        ))}
+      </div>
         <div className="App">
           <Popup data={data}/>
         </div>
 
-        <div  style={{textAlign: 'justify'}} >
+        {/* <div  style={{textAlign: 'justify'}} >
           <ul>
             {data.tasks.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
 
-        </div>
+        </div> */}
 
        
         
