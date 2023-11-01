@@ -29,8 +29,9 @@ const Experience = ({ experiences }) => {
 
   return (
     <section className="section" id="experiences">
-      <Container>
-        <Jumbotron className="bg-white">
+      <Jumbotron className="m-0 min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
+        <Container>
+
           <h2 className="display-4 mb-5 text-center">
             {experiences.heading}
           </h2>
@@ -90,8 +91,9 @@ const Experience = ({ experiences }) => {
               </style>
             </Col>
           </Row>
-        </Jumbotron>
-      </Container>
+        </Container>
+      </Jumbotron>
+
     </section>
   );
 }

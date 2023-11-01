@@ -16,7 +16,7 @@ const Leadership = ({ heading, message, img, imageSize }) => {
   return (
     <Jumbotron
       id="leadership"
-      className="m-0"
+      className="m-0 min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0"
       style={{ backgroundColor: "white" }}
     >
       <h2 className="display-4 pb-5 text-center">{heading}</h2>
