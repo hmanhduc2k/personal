@@ -133,10 +133,10 @@ const experiences = {
         'Deployed and managed systems with Docker and Google Cloud Platform'
       ],
       technologies: [
-        { name: "Vue", logo: "../assets/logos/vue.png" },
-        { name: "SQLAlchemy", logo: "../assets/logos/sqlalchemy.jpg" },
-        { name: "Google Cloud", logo: "../assets/logos/gcpd.png" },
-        { name: "GitHub Actions", logo: "../assets/logos/gitact.png" },
+        { name: "Vue", logo: require("../assets/logos/vue.png") },
+        { name: "SQLAlchemy", logo: require("../assets/logos/sqlalchemy.jpg") },
+        { name: "Google Cloud", logo: require("../assets/logos/gcp.png") },
+        { name: "GitHub Actions", logo: require("../assets/logos/gitact.png") },
       ]
     },
     {
@@ -147,8 +147,8 @@ const experiences = {
         
       ],
       technologies: [
-        { name: "ReactJS", logo: "../assets/logos/react.png" },
-        { name: "C#", logo: "../assets/logos/csharp.png" }
+        { name: "ReactJS", logo: require("../assets/logos/react.png") },
+        { name: "C#", logo: require("../assets/logos/csharp.png") }
       ]
     },
     {
@@ -159,8 +159,8 @@ const experiences = {
         
       ],
       technologies: [
-        { name: "OpenCV", logo: "../assets/logos/opencv.png" },
-        { name: "Torch", logo: "../assets/logos/pytorch.png" }
+        { name: "OpenCV", logo: require("../assets/logos/opencv.png") },
+        { name: "Torch", logo: require("../assets/logos/pytorch.png") }
       ]
     },
     {
@@ -171,8 +171,8 @@ const experiences = {
         
       ],
       technologies: [
-        { name: "Figma", logo: "../assets/logos/figma.png" },
-        { name: "SQL", logo: "/path/to/pgsql.png" }
+        { name: "Figma", logo: require("../assets/logos/figma.png") },
+        { name: "SQL", logo: require("../assets/logos/pgsql.png") }
       ]
     }
   ]

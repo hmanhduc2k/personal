@@ -30,23 +30,24 @@ const ExperienceCard = ({ data }) => {
         <div style={{textAlign: 'start'}}>
           <b>Technologies</b>
         </div>
-        <br />
         <div className="tech-logos" style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '260px' }}>
         {data.technologies.map((tech, index) => (
+          console.log(tech),
           <img 
             key={index}
             src={tech.logo}
             alt={tech.name}
             style={{
-              width: '100px',   // Adjust as needed
-              height: '100px',  // Adjust as needed
+              width: '50px',   // Adjust as needed
+              height: '50px',  // Adjust as needed
               objectFit: 'contain',
               margin: '5px'    // Gives some space between logos
             }}
           />
         ))}
+        <br />
       </div>
-        <div className="App">
+        <div className="App" style={{marginTop: "10px"}}>
           <Popup data={data}/>
         </div>
 
