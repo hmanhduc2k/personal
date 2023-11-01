@@ -24,10 +24,17 @@ import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 import Education from "./components/home/Education.jsx";
+import { Helmet } from 'react-helmet';
+
 
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
+      <Helmet>
+        <title>Manh Duc's swamp</title>
+        <meta name="description" content="This is Manh Duc's personal website built with ReactJS" />
+        <meta name="keywords" content="SWE, AI, ML" />
+      </Helmet>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
