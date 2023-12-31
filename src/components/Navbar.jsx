@@ -36,21 +36,16 @@ const Navigation = React.forwardRef((props, ref) => {
   return (
     <Navbar
       ref={navbarMenuRef}
-      className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
+      className={`px-3 fixed-top custom-navbar  ${!isTop ? "navbar-white" : "navbar-transparent"
         }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand text-white" href={process.env.PUBLIC_URL + "/#home"}>
-        Hoang Manh Duc
+      <Navbar.Brand className="navbar-brand brandsize text-white text-bold" href={process.env.PUBLIC_URL + "/#home"}>
+        MANH DUC
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
-          {/* {
-            <NavLink className="nav-item lead">
-              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
-            </NavLink>
-          } */}
           {about.show && (
             <NavLink
               className="nav-item lead text-white"
@@ -109,6 +104,27 @@ const Navigation = React.forwardRef((props, ref) => {
           
         </Nav>
       </Navbar.Collapse>
+
+      <style>
+        {
+          `
+          .nav-link:hover {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Add your desired box shadow properties here */
+            background: linear-gradient(to bottom, #cc0099 0%, #000066 50%);
+          }
+          .custom-navbar {
+              background: linear-gradient(to bottom, #9933ff 0%, rgba(153, 51, 255, 0) 100%);
+          }
+          .nav-link {
+            font-family: 'Comic Sans MS';
+            font-size: 16px; /* Adjust font size as needed */
+          }
+          .brandsize {
+            font-size: 20px;
+          }
+          `
+        }
+      </style>
     </Navbar>
   );
 });
