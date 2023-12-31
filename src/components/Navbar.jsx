@@ -113,7 +113,7 @@ const Navigation = React.forwardRef((props, ref) => {
             background: linear-gradient(to bottom, #cc0099 0%, #000066 50%);
           }
           .custom-navbar {
-              background: linear-gradient(to bottom, #9933ff 0%, rgba(153, 51, 255, 0) 105%);
+              background: linear-gradient(to bottom, #9933ff 0%, rgba(153, 51, 255, 0) 100%);
           }
           .nav-link {
             font-family: 'Comic Sans MS';
